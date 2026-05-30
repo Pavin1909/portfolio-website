@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pavin Portfolio | Home</title>
+
+    <meta name="description" content="Personal portfolio website of Pavin showcasing skills, projects, and contact information.">
+    <meta name="keywords" content="Portfolio, Web Developer, HTML5, CSS3, JavaScript, Student">
+    <meta name="author" content="Pavin">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, sans-serif;
+            line-height:1.6;
+            color:#222;
+            background:#f5f5f5;
+        }
+
+        .skip-link{
+            position:absolute;
+            left:-9999px;
+        }
+
+        .skip-link:focus{
+            left:10px;
+            top:10px;
+            background:#000;
+            color:#fff;
+            padding:10px;
+            z-index:100;
+        }
+
+        header{
+            background:#1f2937;
+            color:white;
+            padding:20px;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:20px;
+            margin-top:10px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+        }
+
+        nav a:hover,
+        nav a:focus{
+            text-decoration:underline;
+        }
+
+        main{
+            max-width:1000px;
+            margin:auto;
+            padding:30px;
+        }
+
+        section{
+            background:white;
+            padding:20px;
+            margin-bottom:20px;
+            border-radius:8px;
+        }
+
+        article{
+            margin-top:15px;
+        }
+
+        footer{
+            background:#1f2937;
+            color:white;
+            text-align:center;
+            padding:15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<a href="#main-content" class="skip-link">
+    Skip to Main Content
+</a>
+
+<header role="banner">
+
+    <h1>Pavin Portfolio</h1>
+
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main id="main-content">
+
+    <section aria-labelledby="welcome-heading">
+        <h2 id="welcome-heading">Welcome</h2>
+
+        <p>
+            Welcome to my personal portfolio website.
+            I am passionate about web development,
+            embedded systems, and software engineering.
+        </p>
+    </section>
+
+    <section aria-labelledby="skills-heading">
+
+        <h2 id="skills-heading">Skills</h2>
+
+        <article>
+            <h3>Frontend Development</h3>
+            <p>HTML5, CSS3, JavaScript</p>
+        </article>
+
+        <article>
+            <h3>Programming</h3>
+            <p>Python, C, C++</p>
+        </article>
+
+        <article>
+            <h3>Embedded Systems</h3>
+            <p>Arduino, ESP32, RFID Systems</p>
+        </article>
+
+    </section>
+
+    <section aria-labelledby="highlight-heading">
+
+        <h2 id="highlight-heading">Highlights</h2>
+
+        <article>
+            <h3>RFID Attendance System</h3>
+            <p>
+                Built an attendance management system using Arduino,
+                ESP32 and Google Sheets integration.
+            </p>
+        </article>
+
+        <article>
+            <h3>Expense Tracker</h3>
+            <p>
+                Developed a Python-based expense tracking application.
+            </p>
+        </article>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Pavin Portfolio. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
